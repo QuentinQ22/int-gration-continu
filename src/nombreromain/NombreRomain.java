@@ -4,8 +4,13 @@ public class NombreRomain {
     public static String Convertir(int nombreArabe) {
             StringBuilder resultat = new StringBuilder();
 
-            for (int i = 0; i < nombreArabe; i++) {
-                resultat.append("I");
+            if(nombreArabe < 4) {
+                for (int i = 0; i < nombreArabe; i++) {
+                    resultat.append("I");
+                }
+            }
+            else if (nombreArabe == 4) {
+                resultat.append("IV");
             }
 
             return resultat.toString();
