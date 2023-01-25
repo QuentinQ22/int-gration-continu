@@ -34,7 +34,7 @@ class NombreRomainsTest {
         // QUAND on le convertit en nombre romain
         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
 
-        // ALORS on obtient un I
+        // ALORS on obtient un II
         assertEquals("II", nombreRomain);
     }
     @Test
@@ -48,7 +48,7 @@ class NombreRomainsTest {
         // QUAND on le convertit en nombre romain
         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
 
-        // ALORS on obtient un I
+        // ALORS on obtient un III
         assertEquals("III", nombreRomain);
     }
     @Test
@@ -62,7 +62,35 @@ class NombreRomainsTest {
         // QUAND on le convertit en nombre romain
         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
 
-        // ALORS on obtient un I
+        // ALORS on obtient un IV
         assertEquals("IV", nombreRomain);
+    }
+    @Test
+    @DisplayName("ETANT DONNE un chiffre arabe 5" +
+            "QUAND on le convertit en nombre romain" +
+            "ALORS on obtient un V")
+    public void Test_5() {
+        //ETANT DONNE un chiffre arabe 5
+        int chiffreArabe = 5;
+
+        // QUAND on le convertit en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        // ALORS on obtient un V
+        assertEquals("V", nombreRomain);
+    }
+    @Test
+    @DisplayName("ETANT DONNE un chiffre arabe 5" +
+            "QUAND on le convertit en nombre romain" +
+            "ALORS on obtient un VI")
+    public void Test_6() {
+        //ETANT DONNE un chiffre arabe 5
+        int chiffreArabe = 5;
+
+        // QUAND on le convertit en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        // ALORS on obtient un V
+        assertEquals("V", nombreRomain);
     }
 }

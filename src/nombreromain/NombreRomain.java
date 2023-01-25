@@ -12,6 +12,9 @@ public class NombreRomain {
             else if (nombreArabe == 4) {
                 resultat.append("IV");
             }
+            else if (nombreArabe == 5) {
+                resultat.append("V");
+            }
 
             return resultat.toString();
         }
