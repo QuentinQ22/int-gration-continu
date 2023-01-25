@@ -66,7 +66,7 @@ class NombreRomainsTest {
         assertEquals("IV", nombreRomain);
     }
     @Test
-    @DisplayName("ETANT DONNE un chiffre arabe 5" +
+    @DisplayName("ETANT DONNE un chiffre arabe 6" +
             "QUAND on le convertit en nombre romain" +
             "ALORS on obtient un V")
     public void Test_5() {
@@ -80,17 +80,45 @@ class NombreRomainsTest {
         assertEquals("V", nombreRomain);
     }
     @Test
-    @DisplayName("ETANT DONNE un chiffre arabe 5" +
+    @DisplayName("ETANT DONNE un chiffre arabe 6" +
             "QUAND on le convertit en nombre romain" +
             "ALORS on obtient un VI")
     public void Test_6() {
-        //ETANT DONNE un chiffre arabe 5
-        int chiffreArabe = 5;
+        //ETANT DONNE un chiffre arabe 6
+        int chiffreArabe = 6;
 
         // QUAND on le convertit en nombre romain
         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
 
-        // ALORS on obtient un V
-        assertEquals("V", nombreRomain);
+        // ALORS on obtient un VI
+        assertEquals("VI", nombreRomain);
+    }
+    @Test
+    @DisplayName("ETANT DONNE un chiffre arabe 7" +
+            "QUAND on le convertit en nombre romain" +
+            "ALORS on obtient un VII")
+    public void Test_7() {
+        //ETANT DONNE un chiffre arabe 7
+        int chiffreArabe = 7;
+
+        // QUAND on le convertit en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        // ALORS on obtient un VII
+        assertEquals("VII", nombreRomain);
+    }
+    @Test
+    @DisplayName("ETANT DONNE un chiffre arabe 8" +
+            "QUAND on le convertit en nombre romain" +
+            "ALORS on obtient un VIII")
+    public void Test_8() {
+        //ETANT DONNE un chiffre arabe 8
+        int chiffreArabe = 8;
+
+        // QUAND on le convertit en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        // ALORS on obtient un VIII
+        assertEquals("VIII", nombreRomain);
     }
 }
