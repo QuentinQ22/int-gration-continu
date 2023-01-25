@@ -8,6 +8,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class NombreRomainsTest {
 
+//    public void Test_Unite(int n) {
+//        //ETANT DONNE un chiffre arabe 1
+//        int chiffreArabe = 1;
+//
+//        // QUAND on le convertit en nombre romain
+//        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+//
+//        // ALORS on obtient un I
+//        assertEquals("I", nombreRomain);
+//    }
+
     @Test
     @DisplayName("ETANT DONNE un chiffre arabe 1" +
             "QUAND on le convertit en nombre romain" +
