@@ -27,6 +27,13 @@ public class NombreRomain {
             else if (nombreArabe == 10) {
                 resultat.append("X");
             }
+            else {
+                resultat.append("X");
+                for(int i = 10; i < nombreArabe; i++)
+                {
+                    resultat.append("I");
+                }
+            }
 
             return resultat.toString();
         }
