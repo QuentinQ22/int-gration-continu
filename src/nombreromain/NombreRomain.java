@@ -15,11 +15,14 @@ public class NombreRomain {
             else if (nombreArabe == 5) {
                 resultat.append("V");
             }
-            else if(nombreArabe > 5) {
+            else if(nombreArabe > 5 && nombreArabe < 9) {
                 resultat.append("V");
                 for (int i =5; i<nombreArabe; i++) {
                     resultat.append("I");
                 }
+            }
+            else if (nombreArabe == 9) {
+                resultat.append("IV");
             }
 
             return resultat.toString();
