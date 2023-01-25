@@ -22,7 +22,10 @@ public class NombreRomain {
                 }
             }
             else if (nombreArabe == 9) {
-                resultat.append("IV");
+                resultat.append("IX");
+            }
+            else if (nombreArabe == 10) {
+                resultat.append("X");
             }
 
             return resultat.toString();

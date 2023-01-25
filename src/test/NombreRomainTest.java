@@ -125,7 +125,7 @@ class NombreRomainsTest {
     @Test
     @DisplayName("ETANT DONNE un chiffre arabe 9" +
             "QUAND on le convertit en nombre romain" +
-            "ALORS on obtient un IV")
+            "ALORS on obtient un IX")
     public void Test_9() {
         //ETANT DONNE un chiffre arabe 9
         int chiffreArabe = 9;
@@ -133,7 +133,21 @@ class NombreRomainsTest {
         // QUAND on le convertit en nombre romain
         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
 
-        // ALORS on obtient un IV
-        assertEquals("IV", nombreRomain);
+        // ALORS on obtient un IX
+        assertEquals("IX", nombreRomain);
+    }
+    @Test
+    @DisplayName("ETANT DONNE un chiffre arabe 10" +
+            "QUAND on le convertit en nombre romain" +
+            "ALORS on obtient un X")
+    public void Test_10() {
+        //ETANT DONNE un chiffre arabe 10
+        int chiffreArabe = 10;
+
+        // QUAND on le convertit en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        // ALORS on obtient un X
+        assertEquals("X", nombreRomain);
     }
 }
