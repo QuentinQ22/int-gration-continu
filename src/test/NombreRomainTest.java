@@ -37,4 +37,18 @@ class NombreRomainsTest {
         // ALORS on obtient un I
         assertEquals("II", nombreRomain);
     }
+    @Test
+    @DisplayName("ETANT DONNE un chiffre arabe 3" +
+            "QUAND on le convertit en nombre romain" +
+            "ALORS on obtient un III")
+    public void Test_3() {
+        //ETANT DONNE un chiffre arabe 1
+        int chiffreArabe = 3;
+
+        // QUAND on le convertit en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        // ALORS on obtient un I
+        assertEquals("III", nombreRomain);
+    }
 }
